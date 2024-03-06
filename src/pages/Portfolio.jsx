@@ -93,7 +93,7 @@ const Portfolio = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="max-w-xs w-54 h-54 rounded overflow-hidden shadow-lg m-4"
+            className="max-w-xs w-54 h-54 rounded overflow-hidden shadow-lg m-4 transition duration-300 transform hover:scale-105"
           >
             <img src={skill.image} alt={skill.name} className="w-full h-48" />
             <div className="px-6 py-4">
@@ -102,6 +102,8 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
+
+      {/* need to add a hover to this flash card */}
     </div>
   );
 };
