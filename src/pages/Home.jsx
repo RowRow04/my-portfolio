@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import homeImage from "../Image/header1.jpg";
 import Portfolio from "./Portfolio";
 import About from "./About";
 import Contact from "./Contact";
-import Skills from "./Skills";
+import "../App.css";
 
 const Home = () => {
   const [buttonClicked, setButtonClicked] = useState(false);
@@ -13,9 +13,23 @@ const Home = () => {
     setButtonClicked(true);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const background = document.querySelector(".background");
+      const yOffset = window.pageYOffset;
+      background.style.backgroundPositionY = `${yOffset * 0.5}px`; // Adjust the speed of the parallax effect
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <div className="relative">
+      <div className="background relative">
         <div className="absolute inset-0 z-0">
           <img
             src={homeImage}
@@ -57,7 +71,6 @@ const Home = () => {
         </div>
       </div>
       <Portfolio style={{ position: "relative", zIndex: 100 }} />
-      <Skills />
       <Contact />
       <About />
     </div>

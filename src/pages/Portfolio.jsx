@@ -5,6 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import ProjectImage1 from "../Image/junkshooter.png";
 import ProjectImage2 from "../Image/websitejunkshooter.png";
 import ProjectVideo1 from "../Video/Arkadia.mp4";
+import HTMLImage from "../Image/logo/html.png"; // Import skill images
+import CSSImage from "../Image/logo/cssicon.png";
+import JavaScriptImage from "../Image/logo/javascript.png";
+import ReactImage from "../Image/logo/react.png";
+// Import other skill images...
 
 const Portfolio = () => {
   const projects = [
@@ -26,7 +31,6 @@ const Portfolio = () => {
         "Arkadia is an educational adventure game set on an island called ‘Arkadia’. The player embarks on a journey, tackling many different challenges and tasks on the island. They get to explore the island and encounter different critically endangered animals that reside there. The player must protect the animals against poachers and their habitats from illegal loggers. The game is designed for children aged 10 to 15 and offers educational content about critically endangered animals in the Philippines. Arkadia provides a fun and educational experience for users. It has elements of 3D and 2D graphics, a fantasy theme, and is available on Android mobile devices.",
       videoUrl: ProjectVideo1,
     },
-    // Add more projects as needed
   ];
 
   const sliderSettings = {
@@ -36,6 +40,15 @@ const Portfolio = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const skills = [
+    { name: "HTML", image: HTMLImage },
+    { name: "CSS", image: CSSImage },
+    { name: "JavaScript", image: JavaScriptImage },
+    { name: "React", image: ReactImage },
+
+    // Add other skills with their images...
+  ];
 
   return (
     <div className="container mx-auto py-8 bg-white text-black">
@@ -64,7 +77,19 @@ const Portfolio = () => {
       </Slider>
       <div className="flex justify-center mt-8">
         <p className="text-2xl font-bold">More projects coming soon...</p>
-        <p className="text-2xl font-bold">skills</p>
+      </div>
+      <h1 className="text-4xl font-bold text-center mb-8 text-black">Skills</h1>
+      <div className="flex justify-center mt-8">
+        {skills.map((skill, index) => (
+          <div key={index} className="flex flex-col items-center mr-4">
+            <img
+              src={skill.image}
+              alt={skill.name}
+              className="w-10 h-10 mb-2"
+            />
+            <p className="text-lg">{skill.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

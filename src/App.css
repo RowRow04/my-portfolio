@@ -40,5 +40,11 @@
 .fadeIn {
   animation: fadeIn 0.5s ease-out;
 }
+.background {
+  background-attachment: fixed; /* Ensures the background image stays fixed while scrolling */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Cover the entire container with the background image */
+}
 
 
