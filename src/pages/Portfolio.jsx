@@ -6,14 +6,14 @@ import ProjectImage1 from "../Image/backgroundimage/junkshooter.png";
 import ProjectImage2 from "../Image/backgroundimage/websitejunkshooter.png";
 import ProjectVideo1 from "../Video/Arkadia.mp4";
 import HTMLImage from "../Image/logo/html.png";
-import CSSImage from "../Image/logo/cssicon.png";
+import CSSImage from "../Image/logo/css.png";
 import JavaScriptImage from "../Image/logo/javascript.png";
 import ReactImage from "../Image/logo/react.png";
 import AdobeImage from "../Image/logo/adobephotoshop.png";
 import BlenderImage from "../Image/logo/blender.png";
 import GithubImage from "../Image/logo/githublogo.png";
 import JavaImage from "../Image/logo/javalogo.png";
-import UnityImage from "../Image/logo/unitylogo.png";
+import UnityImage from "../Image/logo/unity.png";
 import Python from "../Image/logo/pythonlogo.png";
 
 const Portfolio = () => {
@@ -57,8 +57,6 @@ const Portfolio = () => {
     { name: "Java", image: JavaImage },
     { name: "Unity", image: UnityImage },
     { name: "Python", image: Python },
-
-    // Add other skills with their images...
   ];
 
   return (
@@ -90,15 +88,17 @@ const Portfolio = () => {
         <p className="text-2xl font-bold">More projects coming soon...</p>
       </div>
       <h1 className="text-4xl font-bold text-center mb-8 text-black">Skills</h1>
-      <div className="flex justify-center mt-8">
+
+      <div className="flex justify-center mt-8 flex-wrap">
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center mr-4">
-            <img
-              src={skill.image}
-              alt={skill.name}
-              className="w-10 h-10 mb-2"
-            />
-            <p className="text-lg">{skill.name}</p>
+          <div
+            key={index}
+            className="max-w-xs w-54 h-54 rounded overflow-hidden shadow-lg m-4"
+          >
+            <img src={skill.image} alt={skill.name} className="w-full h-48" />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">{skill.name}</div>
+            </div>
           </div>
         ))}
       </div>
