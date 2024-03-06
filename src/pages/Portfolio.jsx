@@ -9,7 +9,12 @@ import HTMLImage from "../Image/logo/html.png"; // Import skill images
 import CSSImage from "../Image/logo/cssicon.png";
 import JavaScriptImage from "../Image/logo/javascript.png";
 import ReactImage from "../Image/logo/react.png";
-// Import other skill images...
+import AdobeImage from "../Image/logo/adobephotoshop.png";
+import BlenderImage from "../Image/logo/blender.png";
+import GithubImage from "../Image/logo/githublogo.png";
+import JavaImage from "../Image/logo/javalogo.png";
+import UnityImage from "../Image/logo/unitylogo.png";
+import Python from "../Image/logo/pythonlogo.png";
 
 const Portfolio = () => {
   const projects = [
@@ -46,6 +51,12 @@ const Portfolio = () => {
     { name: "CSS", image: CSSImage },
     { name: "JavaScript", image: JavaScriptImage },
     { name: "React", image: ReactImage },
+    { name: "Adobe Photoshop", image: AdobeImage },
+    { name: "Blender", image: BlenderImage },
+    { name: "Github", image: GithubImage },
+    { name: "Java", image: JavaImage },
+    { name: "Unity", image: UnityImage },
+    { name: "Python", image: Python },
 
     // Add other skills with their images...
   ];
