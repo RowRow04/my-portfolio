@@ -47,4 +47,22 @@
   background-size: cover; /* Cover the entire container with the background image */
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+.button-animation {
+  transition: background-color 0.3s ease;
+} 
+
+.button-animation:hover {
+  background-color: #4a90e2; /* Change to the desired hover color */
+}
+
+
 

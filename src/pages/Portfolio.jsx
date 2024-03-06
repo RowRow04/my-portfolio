@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react"; // Importing useEffect and useState
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,7 +14,7 @@ import BlenderImage from "../Image/logo/blender.png";
 import GithubImage from "../Image/logo/githublogo.png";
 import JavaImage from "../Image/logo/javalogo.png";
 import UnityImage from "../Image/logo/unity.png";
-import Python from "../Image/logo/pythonlogo.png";
+import PythonImage from "../Image/logo/pythonlogo.png";
 
 const Portfolio = () => {
   const projects = [
@@ -44,6 +44,8 @@ const Portfolio = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    fade: true, // Set fade animation
+    cssEase: "linear", // Set linear easing for smoother animation
   };
 
   const skills = [
@@ -56,8 +58,21 @@ const Portfolio = () => {
     { name: "Github", image: GithubImage },
     { name: "Java", image: JavaImage },
     { name: "Unity", image: UnityImage },
-    { name: "Python", image: Python },
+    { name: "Python", image: PythonImage },
   ];
+
+  // State to track if the animation should be triggered
+  const [animateSkills, setAnimateSkills] = useState(false);
+
+  useEffect(() => {
+    // Trigger the animation after a short delay when the component mounts
+    const timer = setTimeout(() => {
+      setAnimateSkills(true);
+    }, 100);
+
+    // Clear the timeout when the component unmounts to avoid memory leaks
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="container mx-auto py-8 bg-white text-black">
@@ -93,7 +108,9 @@ const Portfolio = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="max-w-xs w-54 h-54 rounded overflow-hidden shadow-lg m-4 transition duration-300 transform hover:scale-105"
+            className={`max-w-xs w-54 h-54 rounded overflow-hidden shadow-lg m-4 transition duration-300 transform hover:scale-105 ${
+              animateSkills ? "animate__animated animate__zoomIn" : ""
+            }`}
           >
             <img src={skill.image} alt={skill.name} className="w-full h-48" />
             <div className="px-6 py-4">
@@ -102,8 +119,6 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-
-      {/* need to add a hover to this flash card */}
     </div>
   );
 };

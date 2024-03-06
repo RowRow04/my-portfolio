@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import "../App.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ const Contact = () => {
   const [showModal, setShowModal] = useState(false);
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [formMounted, setFormMounted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,19 +31,49 @@ const Contact = () => {
     setErrorMessage(null);
   };
 
+  useEffect(() => {
+    // This effect runs when the component mounts
+    setFormMounted(true);
+  }, []);
+
   return (
     <div className="container mx-auto py-8">
       <h2 className="text-3xl font-bold mb-4 text-center">Contact Me</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <p className="text-lg mb-4">
-            Feel free to reach out to me via email or through the contact form
-            below:
-          </p>
-          <p className="text-lg mb-4">Email: rogelioesguerra04jr@gmail.com</p>
-          <p className="text-lg mb-4">Phone: 09627534508</p>
+          <div className="rounded-lg bg-gray-200 p-6">
+            <p className="text-lg mb-4">
+              <strong>
+                Feel free to reach out to me via email or through the contact
+                form. form in the right side:
+              </strong>
+            </p>
+            <p className="text-lg mb-4">
+              <strong>Email:</strong>{" "}
+              <a
+                href="mailto:rogelioesguerra04jr@gmail.com"
+                className="text-blue-600 hover:underline"
+              >
+                rogelioesguerra04jr@gmail.com
+              </a>
+            </p>
+            <p className="text-lg mb-4">
+              <strong>Phone:</strong>{" "}
+              <a
+                href="tel:+639627534508"
+                className="text-blue-600 hover:underline"
+              >
+                09627534508
+              </a>
+            </p>
+          </div>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={handleSubmit}
+          className={`rounded-lg bg-gray-200 shadow-md p-8 ${
+            formMounted ? "fade-in active" : "fade-in"
+          }`}
+        >
           <div className="mb-4">
             <label htmlFor="name" className="block text-lg mb-2">
               Name
@@ -52,7 +84,7 @@ const Contact = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-black-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
             />
           </div>
           <div className="mb-4">
