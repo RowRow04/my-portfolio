@@ -1,0 +1,44 @@
+.header {
+  background-image: url('your-image-url.jpg');
+}
+
+/* Dark mode styles */
+.dark {
+  background-color: #1a202c;
+  color: #cbd5e0;
+}
+
+.dark button {
+  background-color: #4a5568;
+  color: #cbd5e0;
+}
+
+/* Light mode styles */
+.light {
+  background-color: #ffffff;
+  color: #1a202c;
+}
+
+.light button {
+  background-color: #cbd5e0;
+  color: #1a202c;
+}
+
+
+/* Add this to your CSS file */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+
