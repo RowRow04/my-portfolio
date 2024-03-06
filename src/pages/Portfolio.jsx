@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProjectImage1 from "../Image/junkshooter.png";
-import ProjectImage2 from "../Image/websitejunkshooter.png";
+import ProjectImage1 from "../Image/backgroundimage/junkshooter.png";
+import ProjectImage2 from "../Image/backgroundimage/websitejunkshooter.png";
 import ProjectVideo1 from "../Video/Arkadia.mp4";
 import HTMLImage from "../Image/logo/html.png"; // Import skill images
 import CSSImage from "../Image/logo/cssicon.png";

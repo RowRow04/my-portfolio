@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import homeImage from "../Image/header1.jpg";
+import homeImage from "../Image/backgroundimage/header1.jpg";
 import Portfolio from "./Portfolio";
 import About from "./About";
 import Contact from "./Contact";

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import profileimage from "../Image/profile.png";
+import profileimage from "../Image/backgroundimage/profile.png";
 
 const About = () => {
   useEffect(() => {
