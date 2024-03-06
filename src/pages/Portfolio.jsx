@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Scrollama } from "react-scrollama";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProjectImage1 from "../Image/backgroundimage/junkshooter.png";
 import ProjectImage2 from "../Image/backgroundimage/websitejunkshooter.png";
 import ProjectVideo1 from "../Video/Arkadia.mp4";
-import HTMLImage from "../Image/logo/html.png"; // Import skill images
+import HTMLImage from "../Image/logo/html.png";
 import CSSImage from "../Image/logo/cssicon.png";
 import JavaScriptImage from "../Image/logo/javascript.png";
 import ReactImage from "../Image/logo/react.png";
@@ -14,7 +15,7 @@ import BlenderImage from "../Image/logo/blender.png";
 import GithubImage from "../Image/logo/githublogo.png";
 import JavaImage from "../Image/logo/javalogo.png";
 import UnityImage from "../Image/logo/unitylogo.png";
-import Python from "../Image/logo/pythonlogo.png";
+import PythonImage from "../Image/logo/pythonlogo.png";
 
 const Portfolio = () => {
   const projects = [
@@ -56,10 +57,29 @@ const Portfolio = () => {
     { name: "Github", image: GithubImage },
     { name: "Java", image: JavaImage },
     { name: "Unity", image: UnityImage },
-    { name: "Python", image: Python },
-
-    // Add other skills with their images...
+    { name: "Python", image: PythonImage },
   ];
+
+  useEffect(() => {
+    const handleStepEnter = (response) => {
+      const { data } = response;
+      // Your logic to handle step enter
+      console.log("Step entered:", data);
+    };
+
+    const scroller = new Scrollama(); // Corrected casing here
+    scroller
+      .setup({
+        step: ".skill-step",
+        offset: 0.5,
+        once: true,
+      })
+      .onStepEnter(handleStepEnter);
+
+    return () => {
+      scroller.destroy();
+    };
+  }, []);
 
   return (
     <div className="container mx-auto py-8 bg-white text-black">
@@ -91,16 +111,21 @@ const Portfolio = () => {
       </div>
       <h1 className="text-4xl font-bold text-center mb-8 text-black">Skills</h1>
       <div className="flex justify-center mt-8">
-        {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center mr-4">
-            <img
-              src={skill.image}
-              alt={skill.name}
-              className="w-10 h-10 mb-2"
-            />
-            <p className="text-lg">{skill.name}</p>
-          </div>
-        ))}
+        <Scrollama>
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center mr-4 skill-step"
+            >
+              <img
+                src={skill.image}
+                alt={skill.name}
+                className="w-10 h-10 mb-2"
+              />
+              <p className="text-lg">{skill.name}</p>
+            </div>
+          ))}
+        </Scrollama>
       </div>
     </div>
   );
