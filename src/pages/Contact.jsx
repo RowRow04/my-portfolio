@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { FaEnvelope, FaPhone, FaUser } from "react-icons/fa";
 import "../App.css";
 
 const Contact = () => {
@@ -42,13 +43,14 @@ const Contact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <div className="rounded-lg bg-gray-200 p-6">
-            <p className="text-lg mb-4">
+            <p className="text-lg mb-4 text-black">
               <strong>
                 Feel free to reach out to me via email or through the contact
                 form. form in the right side:
               </strong>
             </p>
-            <p className="text-lg mb-4">
+            <p className="text-lg mb-4 text-black">
+              <FaEnvelope className="inline-block mr-2" />
               <strong>Email:</strong>{" "}
               <a
                 href="mailto:rogelioesguerra04jr@gmail.com"
@@ -57,7 +59,8 @@ const Contact = () => {
                 rogelioesguerra04jr@gmail.com
               </a>
             </p>
-            <p className="text-lg mb-4">
+            <p className="text-lg mb-4 text-black">
+              <FaPhone className="inline-block mr-2" />
               <strong>Phone:</strong>{" "}
               <a
                 href="tel:+639627534508"
@@ -70,12 +73,13 @@ const Contact = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className={`rounded-lg bg-gray-200 shadow-md p-8 ${
+          className={`rounded-lg bg-gray-200 shadow-md p-8 text-black ${
             formMounted ? "fade-in active" : "fade-in"
           }`}
         >
           <div className="mb-4">
             <label htmlFor="name" className="block text-lg mb-2">
+              <FaUser className="inline-block mr-2" />
               Name
             </label>
             <input
@@ -89,6 +93,7 @@ const Contact = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="email" className="block text-lg mb-2">
+              <FaEnvelope className="inline-block mr-2" />
               Email
             </label>
             <input
@@ -124,7 +129,7 @@ const Contact = () => {
       {showModal && (
         <div className="fixed z-10 inset-0 overflow-y-auto flex items-center justify-center">
           <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
-          <div className="bg-white rounded-lg p-8 max-w-md">
+          <div className="bg-white rounded-lg p-8 max-w-md text-black">
             <button
               className="absolute top-4 right-4 text-lg"
               onClick={closeModal}
