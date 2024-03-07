@@ -9,6 +9,8 @@ import GithubImage from "../Image/logo/githublogo.png";
 import JavaImage from "../Image/logo/javalogo.png";
 import UnityImage from "../Image/logo/unity.png";
 import PythonImage from "../Image/logo/pythonlogo.png";
+import ProjectImage1 from "../Image/backgroundimage/junkshooter.png";
+
 import "../App.css";
 
 const Portfolio = () => {
@@ -85,7 +87,7 @@ const Portfolio = () => {
             </div>
             <p className="slide-image">
               <img
-                src="https://placeimg.com/320/240/animals"
+                src="C:\Users\rogelio\Desktop\Code\Reactjs\my-portfolio\src\Image\backgroundimage\junkshooter.png"
                 alt="stuff"
                 width="320"
                 height="240"
@@ -105,12 +107,7 @@ const Portfolio = () => {
               </a>
             </div>
             <p className="slide-image">
-              <img
-                src="https://placeimg.com/320/240/any"
-                alt="stuff"
-                width="320"
-                height="240"
-              />
+              <img src={ProjectImage1} alt="stuff" width="320" height="240" />
             </p>
           </li>
         </ul>

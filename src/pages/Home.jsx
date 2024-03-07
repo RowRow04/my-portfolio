@@ -5,7 +5,6 @@ import Portfolio from "./Portfolio";
 import About from "./About";
 import Contact from "./Contact";
 import "../App.css";
-import Carousels from "../pages/Carousel";
 
 const Home = () => {
   const [buttonClicked, setButtonClicked] = useState(false);
@@ -74,7 +73,6 @@ const Home = () => {
       <Portfolio style={{ position: "relative", zIndex: 100 }} />
       <Contact />
       <About />
-      <Carousels />
     </div>
   );
 };
