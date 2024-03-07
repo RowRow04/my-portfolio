@@ -15,8 +15,8 @@ const Footer = () => {
       <div>
         <h1 className="w-full text-3xl font-bold text-blue-500">Rogelio.</h1>
         <p className="py-4 text-justify">
-          I'm a web developer and a mobile app developer. I'm also a gamer and a
-          content creator. I'm a front-end developer. I'm a Game Designer.
+          I'm a web developer and a mobiles app developer. I'm also a gamer and
+          a content creator. I'm a front-end developer. I'm a Game Designer.
         </p>
         <div className="flex justify-between md:w-[75%] my-6">
           <a
