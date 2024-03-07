@@ -87,8 +87,9 @@ body {
 
 .slider {
   position: relative;
-  width: 960px;
-  height: 300px;
+  width: 100%;
+  max-width: 970px; /* Maximum width for larger screens */
+  height: 400px;
   margin: 50px auto;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -97,17 +98,36 @@ body {
 
 .slider-controls {
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
   left: 50%;
-  width: 200px;
-  text-align: center;
-  transform: translatex(-50%);
+  transform: translateX(-50%);
   z-index: 1000;
- 
-
   list-style: none;
   text-align: center;
 }
+
+/* Adjustments for smaller screens */
+@media (max-width: 700px) {
+  .slider {
+    height: 300px;
+    margin: 30px auto;
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 540px) {
+  .slider {
+    height: 400px;
+    margin: 20px auto;
+  }
+
+  .slider-controls {
+    bottom: 10px;
+  }
+}
+
+/* Rest of your existing CSS remains unchanged */
+
 
 .slider input[type="radio"] {
   position: absolute;
@@ -183,6 +203,7 @@ label[for="btn-3"] {
 
 .slide-content {
   width: 400px;
+ text-align: justify;
 }
 
 .slide-title {
@@ -192,6 +213,7 @@ label[for="btn-3"] {
 
 .slide-text {
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .slide-link {
@@ -204,7 +226,38 @@ label[for="btn-3"] {
 }
 
 .slide-image img {
-  max-width: 100%;
+  max-width: 300%;
+  margin-left: 50px;
+  height: 303px;
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+  .slide-image img {
+    max-width: 100%;
+  }
+
+  .slide-title {
+    font-size: 24px;
+    text-align: left;
+    margin-right: 30px;
+
+  }
+  .slide-text {
+    text-align: center;
+  }
+  .slide-link {
+    margin-top: 20px;
+  }
+  
 }
 
 /* Slide animations */

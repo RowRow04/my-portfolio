@@ -10,6 +10,8 @@ import JavaImage from "../Image/logo/javalogo.png";
 import UnityImage from "../Image/logo/unity.png";
 import PythonImage from "../Image/logo/pythonlogo.png";
 import ProjectImage1 from "../Image/backgroundimage/junkshooter.png";
+import ProjectImage2 from "../Image/backgroundimage/websitejunkshooter.png";
+import ProjectImage3 from "../Image/backgroundimage/header.jpg";
 
 import "../App.css";
 
@@ -65,12 +67,7 @@ const Portfolio = () => {
               </a>
             </div>
             <p className="slide-image">
-              <img
-                src="https://images.samsung.com/is/image/samsung/assets/ph/apps/gaming-hub/01_gameLauncher_section_kv_mo.jpg?$720_N_JPG$"
-                alt="stuff"
-                width="320"
-                height="240"
-              />
+              <img src={ProjectImage1} alt="stuff" width="450" height="500" />
             </p>
           </li>
           <li className="slide">
@@ -86,12 +83,7 @@ const Portfolio = () => {
               </a>
             </div>
             <p className="slide-image">
-              <img
-                src="C:\Users\rogelio\Desktop\Code\Reactjs\my-portfolio\src\Image\backgroundimage\junkshooter.png"
-                alt="stuff"
-                width="320"
-                height="240"
-              />
+              <img src={ProjectImage2} alt="stuff" width="450" height="500" />
             </p>
           </li>
           <li className="slide">
@@ -107,7 +99,7 @@ const Portfolio = () => {
               </a>
             </div>
             <p className="slide-image">
-              <img src={ProjectImage1} alt="stuff" width="320" height="240" />
+              <img src={ProjectImage3} alt="stuff" width="450" height="500" />
             </p>
           </li>
         </ul>
