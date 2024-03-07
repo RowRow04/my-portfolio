@@ -103,6 +103,7 @@ body {
   text-align: center;
   transform: translatex(-50%);
   z-index: 1000;
+  margin-right: 4px;
 
   list-style: none;
   text-align: center;
@@ -128,16 +129,34 @@ body {
   transition: background-color 0.2s linear;
 }
 
+label[for="btn-1"] {
+  margin-right: 4px;
+}
+
+label[for="btn-2"] {
+  margin-right: 4px;
+}
+
+label[for="btn-3"] {
+  margin-right: 4px;
+}
+
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"] {
-  background-color: #ff4081;
+  background-color: #6babf0;
+  margin-right: 4px;
 }
 
 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
-  background-color: #ff4081;
+  background-color: #6babf0;
+  margin-right: 4px;
+
 }
 
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background-color: #ff4081;
+  background-color: #6babf0;
+  margin-right: 4px;
+
 }
 
 /* SLIDES */
@@ -184,7 +203,7 @@ body {
   color: #fff;
   border-radius: 3px;
   text-decoration: none;
-  background-color: #ff4081;
+  background-color: #6babf0;
 }
 
 .slide-image img {

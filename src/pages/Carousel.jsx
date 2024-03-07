@@ -17,7 +17,7 @@ const Slider = () => {
       <ul className="slides">
         <li className="slide">
           <div className="slide-content">
-            <h2 className="slide-title">Slide #1</h2>
+            <h2 className="slide-title">My Project#1</h2>
             <p className="slide-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
               dignissimos commodi eos totam perferendis possimus dolorem,
