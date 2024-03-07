@@ -51,7 +51,11 @@ const Portfolio = () => {
             alt="Project 1"
           />
           <h3 className="text-2xl font-semibold mt-8">Junk Shooter</h3>
-          <p className="text-gray-400 text-sm mt-2">Project 1 description.</p>
+          <p className="text-gray-400 text-sm mt-2">
+            A mobile game that educate the player about the importance of healty
+            foods and the bad effect of junk food
+          </p>
+
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
             View Project
           </button>
@@ -65,7 +69,10 @@ const Portfolio = () => {
             alt="Project 2"
           />
           <h3 className="text-2xl font-semibold mt-8">Carcue</h3>
-          <p className="text-gray-400 text-sm mt-2">Project 2 description.</p>
+          <p className="text-gray-400 text-sm mt-2">
+            The carcue is an app that notify if the Car need a maintenance and
+            things need to change it a any land vehicle.
+          </p>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
             View Project
           </button>
@@ -79,7 +86,10 @@ const Portfolio = () => {
             alt="Project 3"
           />
           <h3 className="text-2xl font-semibold mt-8">Arkadia</h3>
-          <p className="text-gray-400 text-sm mt-2">Project 3 description.</p>
+          <p className="text-gray-400 text-sm mt-2">
+            The Arkadi low-poly game about protecting the animals from Poachers
+            so that they will become extinct
+          </p>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
             View Project
           </button>
