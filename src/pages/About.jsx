@@ -25,25 +25,41 @@ const About = () => {
           />
         </div>
         <div className="md:w-1/2">
-          <p className="text-lg mb-4 fadeIn text-justify">
-            Hello there! I'm Rogelio A. Esguerra Jr., a recent graduate with a
-            degree in Computer Science from the beautiful islands of the
-            Philippines. Let me share a bit about my background and aspirations
-            with you.
-          </p>
-          <p className="text-lg mb-4 fadeIn text-justify">
-            <h1>Academic Journey:</h1>
-            My journey into the world of technology began when I enrolled in the
-            prestigious Sti College Ortigas-Cainta Computer Science program.
-            Over the course of my academic years, I immersed myself in a wide
-            range of subjects, from algorithms and data structures to software
-            engineering and artificial intelligence. I embraced every
-            opportunity to learn and grow, participating in hackathons, coding
-            competitions, and research projects. Through these experiences, I
-            honed my problem-solving skills, cultivated a passion for
-            innovation, and developed a deep understanding of the principles
-            that underpin modern computing.
-          </p>
+          <div className="container m-auto px-4">
+            <h2 className="text-2xl font-semibold">About me</h2>
+            <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
+              <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                <h3 className="absolute left-0 text-lg font-semibold">2020</h3>
+                <p>
+                  Completed senior high school at STI College Ortigas Cainta.
+                </p>
+              </div>
+              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                <h3 className="absolute left-0 text-lg font-semibold">2020</h3>
+                <p>
+                  I Started to take my degree in computer science at STI College
+                  Ortigas-Cainta.
+                </p>
+              </div>
+              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                <h3 className="absolute left-0 text-lg font-semibold">2022</h3>
+                <p>
+                  I started to learn programming and web development. im started
+                  to create a different project and website. That will help me
+                  to improve my skills in programming and web development.
+                </p>
+              </div>
+              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                <h3 className="absolute left-0 text-lg font-semibold">2024</h3>
+                <p>
+                  I am still learning and improving my skills in programming and
+                  web development. And still studying at STI College
+                  Ortigas-Cainta. This is my journey so far.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="mt-4 flex">
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 button-animation">
               <a href="https://drive.google.com/file/d/1NvG_IjpCpt6BjmdKoFHWQJ4NZgyWpyG9/view?usp=drive_link">
