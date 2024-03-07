@@ -14,10 +14,9 @@ const Footer = () => {
     <footer className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 border-t border-white">
       <div>
         <h1 className="w-full text-3xl font-bold text-blue-500">Rogelio.</h1>
-        <p className="py-4">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit
-          ullam iste repellat consequatur libero reiciendis, blanditiis
-          accusantium.
+        <p className="py-4 text-justify">
+          I'm a web developer and a mobile app developer. I'm also a gamer and a
+          content creator. I'm a front-end developer. I'm a Game Designer.
         </p>
         <div className="flex justify-between md:w-[75%] my-6">
           <a
@@ -68,12 +67,14 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-400">Support</h6>
+          <h6 className="font-medium text-gray-400">Game</h6>
           <ul>
-            <li className="py-2 text-sm"></li>
-            <li className="py-2 text-sm">Documentation</li>
-            <li className="py-2 text-sm">Guides</li>
-            <li className="py-2 text-sm">API Status</li>
+            <li className="py-2 text-sm">Mobile Legends: Bang Bang (MLBB)</li>
+            <li className="py-2 text-sm">Call of Duty: Mobile (CODM)</li>
+            <li className="py-2 text-sm">PUBG Mobile (PUBGM)</li>
+            <li className="py-2 text-sm">
+              League of Legends: Wild Rift (LOL:WR)
+            </li>
           </ul>
         </div>
         <div>
@@ -87,11 +88,11 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-400">Legal</h6>
+          <h6 className="font-medium text-gray-400">Legal rights</h6>
           <ul>
-            <li className="py-2 text-sm">Claim</li>
-            <li className="py-2 text-sm">Policy</li>
-            <li className="py-2 text-sm">Terms</li>
+            <li className="py-2 text-sm">Privacy Policy and Cookies</li>
+            <li className="py-2 text-sm">Accessibility Statement</li>
+            <li className="py-2 text-sm">Terms and Conditions</li>
           </ul>
         </div>
       </div>
