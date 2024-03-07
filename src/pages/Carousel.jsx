@@ -1,5 +1,8 @@
 import React from "react";
 import "../App.css";
+import ProjectImag1 from "../Image/backgroundimage/junkshooter.png";
+import ProjectImag2 from "../Image/backgroundimage/websitejunkshooter.png";
+import ProjectImag3 from "../Image/backgroundimage/header1.jpg";
 
 const Slider = () => {
   return (
@@ -28,12 +31,7 @@ const Slider = () => {
             </a>
           </div>
           <p className="slide-image">
-            <img
-              src="https://images.samsung.com/is/image/samsung/assets/ph/apps/gaming-hub/01_gameLauncher_section_kv_mo.jpg?$720_N_JPG$"
-              alt="stuff"
-              width="320"
-              height="240"
-            />
+            <img src={ProjectImag1} alt="" width="320" height="240" />
           </p>
         </li>
         <li className="slide">
@@ -49,12 +47,7 @@ const Slider = () => {
             </a>
           </div>
           <p className="slide-image">
-            <img
-              src="https://placeimg.com/320/240/animals"
-              alt="stuff"
-              width="320"
-              height="240"
-            />
+            <img src={ProjectImag2} alt="" width="320" height="240" />
           </p>
         </li>
         <li className="slide">
@@ -70,12 +63,7 @@ const Slider = () => {
             </a>
           </div>
           <p className="slide-image">
-            <img
-              src="https://placeimg.com/320/240/any"
-              alt="stuff"
-              width="320"
-              height="240"
-            />
+            <img src={ProjectImag3} alt="" width="320" height="240" />
           </p>
         </li>
       </ul>
