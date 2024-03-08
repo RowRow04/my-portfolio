@@ -26,22 +26,33 @@ const About = () => {
         </div>
         <div className="md:w-1/2">
           <div className="container m-auto px-4">
-            <h2 className="text-2xl font-semibold">About me</h2>
+            <h2 className="text-2xl font-semibold">My journey</h2>
             <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
-              <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+              <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px] text-justify">
                 <h3 className="absolute left-0 text-lg font-semibold">2020</h3>
                 <p>
-                  Completed senior high school at STI College Ortigas Cainta.
+                  At STI College Ortigas Cainta, where I finished my senior year
+                  of high school, I participated in a demanding program that
+                  placed an emphasis on both academics and practical skills. My
+                  future academic and professional aspirations will be
+                  well-prepared by the dynamic learning environment, supportive
+                  community, and numerous extracurricular activities that have
+                  given me invaluable experiences.
                 </p>
               </div>
-              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px] text-justify">
                 <h3 className="absolute left-0 text-lg font-semibold">2020</h3>
                 <p>
-                  I Started to take my degree in computer science at STI College
-                  Ortigas-Cainta.
+                  After completing high school at STI College Ortigas Cainta, I
+                  enrolled in their computer science degree program, driven by
+                  my passion for technology. I'm excited to delve into
+                  cutting-edge concepts and practical applications, confident
+                  that the institution's dynamic learning environment and
+                  supportive community will equip me for success in the
+                  ever-evolving field of computer science.
                 </p>
               </div>
-              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px] text-justify">
                 <h3 className="absolute left-0 text-lg font-semibold">2022</h3>
                 <p>
                   I started to learn programming and web development. im started
@@ -49,12 +60,13 @@ const About = () => {
                   to improve my skills in programming and web development.
                 </p>
               </div>
-              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px] text-justify">
                 <h3 className="absolute left-0 text-lg font-semibold">2024</h3>
                 <p>
                   I am still learning and improving my skills in programming and
                   web development. And still studying at STI College
-                  Ortigas-Cainta. This is my journey so far.
+                  Ortigas-Cainta. This is my journey so far. I am still learning
+                  and improving my skills in programming and web development.
                 </p>
               </div>
             </div>
