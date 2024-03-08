@@ -128,7 +128,7 @@ const Contact = () => {
       </div>
       {showModal && (
         <div className="fixed z-10 inset-0 overflow-y-auto flex items-center justify-center">
-          <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
+          <div className="absolute inset-0 bg-gray-500 opacity-70"></div>
           <div className="bg-white rounded-lg p-8 max-w-md text-black">
             <button
               className="absolute top-4 right-4 text-lg"
