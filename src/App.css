@@ -41,10 +41,10 @@
   animation: fadeIn 0.5s ease-out;
 }
 .background {
-  background-attachment: fixed; /* Ensures the background image stays fixed while scrolling */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-size: cover; /* Cover the entire container with the background image */
+  background-attachment: fixed; /* pag stay lang ang image kapag mag scroll */
+  background-position: center; 
+  background-repeat: no-repeat; /* para hindi umulit yung image  */
+  background-size: cover;  /* para mag cover yung whole screen */
 }
 
 .fade-in {
@@ -61,7 +61,7 @@
 } 
 
 .button-animation:hover {
-  background-color: #4a90e2; /* Change to the desired hover color */
+  background-color: #4a90e2; /* para mapalitan ang mga image hover */
 }
 
 
@@ -102,10 +102,11 @@ body {
 }
 
 .skill-card {
-  transition: 0.3s; /* Add transition effect for smoother hover */
-  box-shadow: 0 4px 8px 0 #3b82f6; /* Add shadow effect */
+  transition: 0.3s; /* maglalagay ng transition para hover efect*/
+
+  box-shadow: 0 4px 8px 0 #3b82f6; /* para mag add ng shadow effect */
 }
 
 .skill-card:hover {
-  box-shadow: 0 20px 25px 0 #3b82f6; /* Add shadow effect */
+  box-shadow: 0 20px 25px 0 #3b82f6; /* para mag add ng shadow effet */
 }

@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header
       className="bg-gray-900 text-white py-4"
-      style={{ backgroundColor: "#3b82f6" }}
+      style={{ backgroundColor: "#3b82f6" }} // background color para sa header
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center w-full">
         <nav className="flex space-x-4 md:mb-0">
@@ -51,6 +51,7 @@ const Header = () => {
           className={`flex space-x-4 md:flex md:space-x-4 ${
             showDropdown ? "block" : "hidden"
           }`}
+          //adding a link to the other page of portfolio
         >
           <Link to="/about" className="text-lg hover:text-blue-500">
             About

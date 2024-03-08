@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    // This effect runs when the component mounts
+    // gumagana lang ang effect ito kapag na mamamount siya
     setFormMounted(true);
   }, []);
 

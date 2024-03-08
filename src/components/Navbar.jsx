@@ -10,10 +10,10 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-35 px-4 text-white">
-      {/* Move the "REACT" text to the left side */}
+      {/* nililipat ang react icon sa left side*/}
       <h1 className="text-3xl font-bold text-[#e6e6e6]">REACT.</h1>
 
-      {/* Move the navigation items to the right side */}
+      {/* nililipat sa right side ng navbar ang mga list text*/}
       <ul className="flex space-x-35">
         <li className="p-4">Home</li>
         <li className="p-4">Company</li>
@@ -22,12 +22,12 @@ const Navbar = () => {
         <li className="p-4">Contact</li>
       </ul>
 
-      {/* Show the menu icon only on small screens */}
+      {/* Pinkaoakita nito yung icon kapag small na screen*/}
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
-      {/* This is the responsive navigation */}
+      {/* para sa responsive navigation for whole page*/}
       <ul
         className={
           nav

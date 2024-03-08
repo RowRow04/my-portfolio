@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"; // Import React and useEffect
+import React, { useEffect } from "react";
 import profileimage from "../Image/backgroundimage/profile.png";
-import { FiDownload, FiLinkedin, FiFacebook, FiYoutube } from "react-icons/fi"; // Import icons from react-icons
+import { FiDownload, FiLinkedin, FiFacebook, FiYoutube } from "react-icons/fi"; // nagiimport ng icon sa react
 
 const About = () => {
-  // Ensure that your component is a functional component
+  // dito na enusre na gumagana yung effect sa components
   useEffect(() => {
-    // Use useEffect within the functional component
+    // ginagamit within lang sa use effect components
     const paragraphs = document.querySelectorAll(".fadeIn");
     paragraphs.forEach((p, index) => {
       p.style.animationDelay = `${index * 0.2}s`;
@@ -18,10 +18,15 @@ const About = () => {
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 md:pr-8 relative">
           <img
-            src={profileimage}
-            alt="Profile"
+            src={profileimage} // pag insert ng mga image
+            alt="Profile" // Alt text for accessibility
             className="rounded-full w-full h-full object-cover bg-gray-300"
-            style={{ borderRadius: "61% 39% 52% 48% / 39% 46% 54% 61% " }}
+            style={{
+              borderRadius: "50%",
+              background: "linear-gradient(315deg, #3575dd, #3f8bff)", // sa Gradient background
+              boxShadow:
+                "inset -50px 50px 100px #183462, inset 50px -50px 100px #5ed0ff", // para sa Box shadow
+            }}
           />
         </div>
         <div className="md:w-1/2">
