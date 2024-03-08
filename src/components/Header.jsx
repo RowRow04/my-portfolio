@@ -9,7 +9,10 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-900 text-white py-4">
+    <header
+      className="bg-gray-900 text-white py-4"
+      style={{ backgroundColor: "#3b82f6" }}
+    >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center w-full">
         <nav className="flex space-x-4 md:mb-0">
           <Link to="/" className="text-xl font-bold">

@@ -49,10 +49,14 @@ const Home = () => {
         <div className="relative">
           <div className="after:bg-[url('./large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
             <img
-              src={Porfile}
-              alt="Profile"
+              src={Porfile} // Assuming Porfile is a variable holding the image URL
+              alt="Profile" // Alt text for accessibility
               className="rounded-full w-full h-full object-cover bg-gray-300"
-              style={{ borderRadius: "61% 39% 52% 48% / 39% 46% 54% 61% " }}
+              style={{
+                borderRadius: "50%",
+                background: "linear-gradient(315deg, #3575dd, #3f8bff)", // Gradient background
+                boxShadow: "-33px -33px 66px #1b3c71, 33px 33px 66px #5bc8ff", // Box shadow
+              }}
             />
           </div>
         </div>
