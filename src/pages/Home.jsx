@@ -10,7 +10,7 @@ const Home = () => {
     const handleScroll = () => {
       const background = document.querySelector(".background");
       const yOffset = window.pageYOffset;
-      background.style.backgroundPositionY = `${yOffset * 0.5}px`; // Adjust the speed of the parallax effect
+      background.style.backgroundPositionY = `${yOffset * 0.5}px`;
     };
 
     window.addEventListener("scroll", handleScroll);
