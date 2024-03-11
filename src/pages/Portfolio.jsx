@@ -105,7 +105,7 @@ const Portfolio = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className={`max-w-xs w-54 h-54 rounded border border-white overflow-hidden shadow-white m-4 skill-card ${
+              className={`w-60 h-54 rounded border border-white overflow-hidden shadow-white m-4 skill-card ${
                 animateSkills ? "animate__animated animate__fadeInLeft" : ""
               }`}
             >

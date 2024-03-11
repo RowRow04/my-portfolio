@@ -51,7 +51,7 @@ const Header = () => {
           className={`flex space-x-4 md:flex md:space-x-4 ${
             showDropdown ? "block" : "hidden"
           }`}
-          //adding a link to the other page of portfolio
+          //adding a link sa mga other page ng website
         >
           <Link to="/about" className="text-lg hover:text-black">
             About
