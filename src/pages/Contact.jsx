@@ -38,33 +38,33 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 border-t border-white">
       <h2 className="text-3xl font-bold mb-4 text-center">Contact Me</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <div className="rounded-lg bg-gray-200 p-6">
+          <div className="rounded-lg bg-blue-400 p-6">
             <p className="text-lg mb-4 text-black">
               <strong>
                 Feel free to reach out to me via email or through the contact
                 form. form in the right side:
               </strong>
             </p>
-            <p className="text-lg mb-4 text-black">
+            <p className="text-lg mb-4 text-black ">
               <FaEnvelope className="inline-block mr-2" />
               <strong>Email:</strong>{" "}
               <a
                 href="mailto:rogelioesguerra04jr@gmail.com"
-                className="text-blue-600 hover:underline"
+                className="text-black hover:underline"
               >
                 rogelioesguerra04jr@gmail.com
               </a>
             </p>
-            <p className="text-lg mb-4 text-black">
+            <p className="text-lg mb-4 text-black ">
               <FaPhone className="inline-block mr-2" />
               <strong>Phone:</strong>{" "}
               <a
                 href="tel:+639627534508"
-                className="text-blue-600 hover:underline"
+                className="text-black hover:underline"
               >
                 09627534508
               </a>
@@ -73,7 +73,7 @@ const Contact = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className={`rounded-lg bg-gray-200 shadow-md p-8 text-black ${
+          className={`rounded-lg bg-blue-400 shadow-md p-8 text-black ${
             formMounted ? "fade-in active" : "fade-in"
           }`}
         >

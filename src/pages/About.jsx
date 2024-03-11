@@ -13,7 +13,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 border-t border-white">
       <h2 className="text-3xl font-bold mb-4">About Me</h2>
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 md:pr-8 relative">
