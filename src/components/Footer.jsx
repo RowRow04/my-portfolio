@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 border-t border-white">
       <div>
         <h1 className="w-full text-3xl font-bold text-blue-500">Rogelio.</h1>
-        <p className="py-4 text-justify">
+        <p className="py-4 text-justify text-white">
           I'm a web developer and a mobiles app developer. I'm also a gamer and
           a content creator. I'm a front-end developer. I'm a Game Designer.
         </p>
@@ -56,45 +56,51 @@ const Footer = () => {
       </div>
       <div className="lg:col-span-2 flex justify-between mt-6">
         <div>
-          <h6 className="font-medium text-gray-400">Services</h6>
+          <h6 className="font-medium Text-white">Services</h6>
           <ul>
-            <li className="py-2 text-sm">Web Design</li>
-            <li className="py-2 text-sm">Web Development</li>
-            <li className="py-2 text-sm">Mobile App Development</li>
-            <li className="py-2 text-sm">E-commerce Development</li>
+            <li className="py-2 text-sm text-white">Web Design</li>
+            <li className="py-2 text-sm text-white">Web Development</li>
+            <li className="py-2 text-sm text-white">Mobile App Development</li>
+            <li className="py-2 text-sm text-white">E-commerce Development</li>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-400">Game</h6>
+          <h6 className="font-medium text-white">Game</h6>
           <ul>
-            <li className="py-2 text-sm">Mobile Legends: Bang Bang (MLBB)</li>
-            <li className="py-2 text-sm">Call of Duty: Mobile (CODM)</li>
-            <li className="py-2 text-sm">PUBG Mobile (PUBGM)</li>
-            <li className="py-2 text-sm">
+            <li className="py-2 text-sm text-white">
+              Mobile Legends: Bang Bang (MLBB)
+            </li>
+            <li className="py-2 text-sm text-white">
+              Call of Duty: Mobile (CODM)
+            </li>
+            <li className="py-2 text-sm Text-white">PUBG Mobile (PUBGM)</li>
+            <li className="py-2 text-sm text-white">
               League of Legends: Wild Rift (LOL:WR)
             </li>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-400">Company</h6>
+          <h6 className="font-medium text-white">Company</h6>
           <ul>
-            <li className="py-2 text-sm">About</li>
-            <li className="py-2 text-sm">Blog</li>
-            <li className="py-2 text-sm">Jobs</li>
-            <li className="py-2 text-sm">Press</li>
-            <li className="py-2 text-sm">Careers</li>
+            <li className="py-2 text-sm text-white">About</li>
+            <li className="py-2 text-sm text-white">Blog</li>
+            <li className="py-2 text-sm text-white">Jobs</li>
+            <li className="py-2 text-sm Text-white">Press</li>
+            <li className="py-2 text-sm text-white">Careers</li>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-400">Legal rights</h6>
+          <h6 className="font-medium text-white">Legal rights</h6>
           <ul>
-            <li className="py-2 text-sm">Privacy Policy and Cookies</li>
-            <li className="py-2 text-sm">Accessibility Statement</li>
-            <li className="py-2 text-sm">Terms and Conditions</li>
+            <li className="py-2 text-sm text-white">
+              Privacy Policy and Cookies
+            </li>
+            <li className="py-2 text-sm text-white">Accessibility Statement</li>
+            <li className="py-2 text-sm text-white">Terms and Conditions</li>
           </ul>
         </div>
       </div>
-      <p className="text-center text-gray-400 mt-8">
+      <p className="text-center text-white mt-8">
         &copy; 2024 Rogelio. All rights reserved.
       </p>
     </footer>

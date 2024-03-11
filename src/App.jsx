@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+// import Cardbody from "./components/Cardbody";
 import "./App.css";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
+        {/* <Cardbody /> */}
       </div>
     </Router>
   );

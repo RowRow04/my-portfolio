@@ -15,7 +15,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center w-full">
         <nav className="flex space-x-4 md:mb-0">
-          <Link to="/" className="text-xl font-bold">
+          <Link to="/" className="text-xl font-bold hover:text-black">
             Home
           </Link>
           <button
@@ -53,13 +53,13 @@ const Header = () => {
           }`}
           //adding a link to the other page of portfolio
         >
-          <Link to="/about" className="text-lg hover:text-blue-500">
+          <Link to="/about" className="text-lg hover:text-black">
             About
           </Link>
-          <Link to="/portfolio" className="text-lg hover:text-blue-500">
+          <Link to="/portfolio" className="text-lg hover:text-black">
             Portfolio
           </Link>
-          <Link to="/contact" className="text-lg hover:text-blue-500">
+          <Link to="/contact" className="text-lg hover:text-black">
             Contact
           </Link>
         </nav>
