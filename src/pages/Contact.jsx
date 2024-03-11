@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
-import { FaEnvelope, FaPhone, FaUser } from "react-icons/fa";
+import {
+  FaAddressBook,
+  FaEnvelope,
+  FaLocationArrow,
+  FaPhone,
+  FaUser,
+} from "react-icons/fa";
 import "../App.css";
 
 const Contact = () => {
@@ -43,37 +49,48 @@ const Contact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <div className="rounded-lg bg-blue-400 p-6">
-            <p className="text-lg mb-4 text-black">
+            <p className="text-lg mb-4 text-white">
               <strong>
                 Feel free to reach out to me via email or through the contact
                 form. form in the right side:
               </strong>
             </p>
-            <p className="text-lg mb-4 text-black ">
+            <p className="text-lg mb-4 text-white ">
               <FaEnvelope className="inline-block mr-2" />
               <strong>Email:</strong>{" "}
               <a
                 href="mailto:rogelioesguerra04jr@gmail.com"
-                className="text-black hover:underline"
+                className="text-white hover:underline"
               >
                 rogelioesguerra04jr@gmail.com
               </a>
             </p>
-            <p className="text-lg mb-4 text-black ">
+            <p className="text-lg mb-4 text-white ">
               <FaPhone className="inline-block mr-2" />
               <strong>Phone:</strong>{" "}
               <a
                 href="tel:+639627534508"
-                className="text-black hover:underline"
+                className="text-white hover:underline"
               >
                 09627534508
+              </a>
+            </p>
+            <p className="text-lg mb-4 text-white ">
+              <FaLocationArrow className="inline-block mr-2" />
+              <strong>Address:</strong>{" "}
+              <a
+                href="https://www.google.com/maps?q=32.5, 123.5"
+                className="text-white hover:underline"
+              >
+                Address: 390 Washington St. Palmera Hills 1 Brgy. San Isdro
+                Taytay Rizal
               </a>
             </p>
           </div>
         </div>
         <form
           onSubmit={handleSubmit}
-          className={`rounded-lg bg-blue-400 shadow-md p-8 text-black ${
+          className={`rounded-lg bg-blue-400 shadow-md p-8 text-white ${
             formMounted ? "fade-in active" : "fade-in"
           }`}
         >
@@ -115,7 +132,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               rows="5"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-black"
             ></textarea>
           </div>
           <button
