@@ -5,7 +5,7 @@
 /* Dark mode styles */
 .dark {
   background-color: #1a202c;
-  color: #cbd5e0;
+  color: #cbd5e0; 
 }
 
 .dark button {
@@ -24,7 +24,7 @@
   color: #1a202c;
 }
 
-/* Add this to your CSS file */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -41,7 +41,7 @@
 }
 .background {
   background-attachment: fixed; /* pag stay lang ang image kapag mag scroll */
-  background-position: center;
+  background-position: center; /* para mag center yung image */
   background-repeat: no-repeat; /* para hindi umulit yung image  */
   background-size: cover; /* para mag cover yung whole screen */
 }

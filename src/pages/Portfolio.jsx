@@ -88,7 +88,7 @@ const Portfolio = () => {
           <h3 className="text-2xl font-semibold mt-8">Arkadia</h3>
           <p className="text-gray-400 text-sm mt-2">
             The Arkadi low-poly game about protecting the animals from Poachers
-            so that they will become extinct
+            so that they will become extinct in the future.
           </p>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
             View Project

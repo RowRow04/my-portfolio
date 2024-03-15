@@ -59,6 +59,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
       <div className="lg:col-span-2 flex justify-between mt-6">
         <div>
           <h6 className="font-medium text-gray hover:text-white">Services</h6>
