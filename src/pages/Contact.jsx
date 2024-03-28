@@ -105,7 +105,7 @@ const Contact = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-black" // change text color to black
             />
           </div>
           <div className="mb-4">
@@ -119,7 +119,7 @@ const Contact = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-black" // change text color to black
             />
           </div>
           <div className="mb-4">
@@ -132,7 +132,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               rows="5"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-black"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-black" // change text color to black
             ></textarea>
           </div>
           <button

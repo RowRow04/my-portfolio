@@ -20,7 +20,7 @@ const About = () => {
           <img
             src={profileimage} // insert image source
             alt="Profile" // Alt text for accessibility
-            className="rounded-full w-full object-cover bg-gray-300"
+            className="rounded-full w-full  object-cover bg-gray-300"
             style={{
               borderRadius: "50%",
               background: "linear-gradient(315deg, #3575dd, #3f8bff)", // Gradient background
