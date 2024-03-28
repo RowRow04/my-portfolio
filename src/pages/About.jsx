@@ -18,14 +18,15 @@ const About = () => {
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 md:pr-8 relative">
           <img
-            src={profileimage} // pag insert ng mga image
+            src={profileimage} // insert image source
             alt="Profile" // Alt text for accessibility
-            className="rounded-full w-full h-full object-cover bg-gray-300"
+            className="rounded-full w-full object-cover bg-gray-300"
             style={{
               borderRadius: "50%",
-              background: "linear-gradient(315deg, #3575dd, #3f8bff)", // sa Gradient background
+              background: "linear-gradient(315deg, #3575dd, #3f8bff)", // Gradient background
               boxShadow:
-                "inset -50px 50px 100px #183462, inset 50px -50px 100px #5ed0ff", // para sa Box shadow
+                "inset -50px 50px 100px #183462, inset 50px -50px 100px #5ed0ff", // Box shadow
+              objectFit: "cover", // Stretchable while maintaining aspect ratio
             }}
           />
         </div>
